@@ -12,6 +12,7 @@ function App() {
   const styles = mainStyles();
 
   const [index, setIndex] = useState(0);
+  
   useEffect(() => {
       setIndex(Math.floor(Math.random()*(quotes.length)));
   },[])

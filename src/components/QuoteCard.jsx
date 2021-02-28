@@ -10,27 +10,27 @@ const QuoteCard = ({quote, author, color, handleQuote}) => {
 
     return (
         <Card className={styles.card}>
-        <div style={{color: color}} className={styles.text}>
-          <Typography className={styles.quote} >
-            {quote}
-          </Typography>
-          <Typography className={styles.author}>
-            -{author}
-          </Typography >
-        </div>
-        <div className={styles.buttons}>
-          <IconButton style={{backgroundColor: color}} className={styles.socialButton}>
-            <FontAwesomeIcon icon={faTwitter} />
-          </IconButton>
-          <IconButton style={{backgroundColor: color}} className={styles.socialButton}>
-            <FontAwesomeIcon icon={faTumblr} />
-          </IconButton>
-          <Button style={{backgroundColor: color}} onClick={handleQuote} className={styles.quoteButton}>
-              <Typography>
-                  New Quote
-              </Typography>
-          </Button>
-        </div>
+            <div style={{color: color}} className={styles.text}>
+                <Typography className={styles.quote} >
+                {quote}
+                </Typography>
+                <Typography className={styles.author}>
+                -{author}
+                </Typography >
+            </div>
+            <div className={styles.buttons}>
+                <IconButton style={{backgroundColor: color}} className={styles.socialButton}>
+                    <FontAwesomeIcon icon={faTwitter} />
+                </IconButton>
+                <IconButton style={{backgroundColor: color}} className={styles.socialButton}>
+                    <FontAwesomeIcon icon={faTumblr} />
+                </IconButton>
+                <Button style={{backgroundColor: color}} onClick={handleQuote} className={styles.quoteButton}>
+                    <Typography>
+                        New Quote
+                    </Typography>
+                </Button>
+            </div>
       </Card>
     )
 }
